@@ -20,6 +20,7 @@ private TextField txt1;
 @FXML
     private TextField txt2;
 
+@FXML
 protected void Divisiones(){
 
     Double num1 = Double.parseDouble(txt1.getText());
