@@ -24,8 +24,7 @@ protected void Division(){
     Double num1 = Double.parseDouble(txt1.getText());
     Double num2 = Double.parseDouble(txt2.getText());
     Double resultado = num1/num2;
-    lblResultado.setText(resultado.toString());
-
+    lblResultado.setText("EL resultado es: " + resultado);
     }
 
 }
