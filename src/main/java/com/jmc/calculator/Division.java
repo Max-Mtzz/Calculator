@@ -21,10 +21,26 @@ private TextField txt1;
     private TextField txt2;
 
 protected void Division(){
+
     Double num1 = Double.parseDouble(txt1.getText());
     Double num2 = Double.parseDouble(txt2.getText());
     Double resultado = num1/num2;
     lblResultado.setText("EL resultado es: " + resultado);
     }
+    public void Regresar(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+            Parent root = loader.load();
 
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+
+            stage.setScene(scene);
+            stage.setTitle("CALCULADORAAAAA!");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            lblResultado.setText("Error al cargar la vista de la calculadora.");
+        }
+    }
 }

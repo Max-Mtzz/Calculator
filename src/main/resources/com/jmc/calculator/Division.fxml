@@ -10,8 +10,8 @@
             <TextField fx:id="txt1" layoutX="116.0" layoutY="80.0" promptText="numero 1" />
             <TextField fx:id="txt2" layoutX="352.0" layoutY="80.0" promptText="numero 2" />
             <Label fx:id="lblResultado" layoutX="121.0" layoutY="130.0" text="Resultado" />
-            <Button fx:id="BtnResultado" layoutX="318.0" layoutY="182.0" mnemonicParsing="false" text="Resultado" />
-            <Button fx:id="btnRegresar" layoutX="174.0" layoutY="182.0" mnemonicParsing="false" text="Regresar" />
+            <Button fx:id="BtnResultado" layoutX="318.0" layoutY="182.0" mnemonicParsing="false" onAction="#Division" text="Resultado" />
+            <Button fx:id="btnRegresar" layoutX="174.0" layoutY="182.0" mnemonicParsing="false" onAction="#Regresar" text="Regresar" />
          </children>
       </Pane>
    </children>
