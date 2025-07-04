@@ -12,7 +12,6 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class Suma {
-
     @FXML
     private Label resultado_lbl;
 
