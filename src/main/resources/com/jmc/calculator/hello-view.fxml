@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.jmc.calculator.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.calculator.HelloController">
+    <Pane prefHeight="400.0" prefWidth="622.0" styleClass="hbox-degradado" stylesheets="@../../../Styles/Style.css">
+        <Label layoutX="31.0" layoutY="77.0" styleClass="Label" text="Selecciona una operacion" />
+        <Button fx:id="btn_suma" layoutX="31.0" layoutY="217.0" mnemonicParsing="false" onAction="#sum" text="Suma" />
+        <Button fx:id="btn_resta" layoutX="121.0" layoutY="217.0" mnemonicParsing="false" onAction="#rest" text="Resta" />
+        <Button fx:id="btn_multiplicacion" layoutX="211.0" layoutY="217.0" mnemonicParsing="false" onAction="#mult" text="Multiplicacion" />
+        <Button fx:id="btn_division" layoutX="355.0" layoutY="217.0" mnemonicParsing="false" onAction="#div" text="Division" />
+    </Pane>
+</HBox>
